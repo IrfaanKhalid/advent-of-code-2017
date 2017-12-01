@@ -14,7 +14,8 @@ import java.util.Scanner;
 
 public class day01 {
     public static void main(String[] args) {
-        Scanner inputScanner = getInputScanner("input/day01.txt");
+        Scanner inputScanner = getInputScanner();
+        assert inputScanner != null;
         String inputString = inputScanner.nextLine();
 
         int originalSum = getOriginalSum(inputString);
@@ -60,9 +61,9 @@ public class day01 {
         return sum;
     }
 
-    private static Scanner getInputScanner(String inputFileName) {
+    private static Scanner getInputScanner() {
         try {
-            return new Scanner(new File(inputFileName));
+            return new Scanner(new File("input/day01.txt"));
         } catch (FileNotFoundException e) {
             System.out.println(e.toString());
             System.exit(-1);
