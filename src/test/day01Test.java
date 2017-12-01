@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class day01Test {
     @Test
-    void testOriginalSum() {
+    void getOriginalSum() {
         assertEquals(3, day01.getOriginalSum("1122"));
         assertEquals(4, day01.getOriginalSum("1111"));
         assertEquals(0, day01.getOriginalSum("1234"));
@@ -23,7 +23,7 @@ class day01Test {
     }
 
     @Test
-    void testCircularSum() {
+    void getCircularSum() {
         assertEquals(6, day01.getCircularSum("1212"));
         assertEquals(0, day01.getCircularSum("1221"));
         assertEquals(4, day01.getCircularSum("123425"));
