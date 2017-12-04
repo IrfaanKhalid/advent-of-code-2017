@@ -1,3 +1,11 @@
+/*
+ * Irfaan Khalid
+ * 12/4/2017
+ *
+ * Description: JUnit tests for Day 04's challenge in Advent of Code 2017.
+ *              http://adventofcode.com/2017/day/4
+ */
+
 package test;
 
 import main.day04;
@@ -19,5 +27,5 @@ class day04Test {
         assertEquals(true, day04.isValidPassphrase("a ab abc abd abf abj"));
         assertEquals(true, day04.isValidPassphrase("iiii oiii ooii oooi oooo"));
         assertEquals(false, day04.isValidPassphrase("oiii ioii iioi iiio"));
-    }cd 
+    }
 }
