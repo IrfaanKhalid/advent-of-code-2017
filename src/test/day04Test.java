@@ -19,7 +19,5 @@ class day04Test {
         assertEquals(true, day04.isValidPassphrase("a ab abc abd abf abj"));
         assertEquals(true, day04.isValidPassphrase("iiii oiii ooii oooi oooo"));
         assertEquals(false, day04.isValidPassphrase("oiii ioii iioi iiio"));
-    }
-
-
+    }cd 
 }
