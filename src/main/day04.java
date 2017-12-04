@@ -40,7 +40,7 @@ public class day04 {
         Scanner lineScanner = new Scanner(passphrase);
         HashSet<String> words = new HashSet<>();
 
-        // Process every word in the passphrase
+        // Process every word in the passphrase and assess redundancy
         while (lineScanner.hasNext()) {
             String currentWord = lineScanner.next();
 
@@ -58,6 +58,7 @@ public class day04 {
     private static boolean containsAnagram(HashSet<String> set, String word) {
         boolean containsAnagram = false;
 
+        // Determine if any of the other
         for (String s : set) {
             containsAnagram |= isAnagram(s, word);
         }
@@ -70,6 +71,7 @@ public class day04 {
         HashMap<Character, Integer> firstCharacterCount = getCountMap(first);
         HashMap<Character, Integer> secondCharacterCount = getCountMap(second);
 
+        // If both the maps are the same, the Strings are anagrams
         return firstCharacterCount.equals(secondCharacterCount);
     }
 
