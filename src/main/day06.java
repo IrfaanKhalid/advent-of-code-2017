@@ -22,7 +22,6 @@ public class day06 {
 
         System.out.println("Redistribution cycles: " + getNumRedistributionCycles(list));
         System.out.println("Size of loop: " + getSizeOfLoop(list));
-
     }
 
     /**
