@@ -75,7 +75,7 @@ public class day06 {
     private static ArrayList<Integer> redistribute(ArrayList<Integer> list) {
         // Determine where to start distributing
         int maxIndex = list.indexOf(Collections.max(list));
-        int distributionIndex = (maxIndex + 1) % list.size(); // Mod to wrap around the list
+        int distributionIndex = (maxIndex + 1) % list.size();
 
         // Get number of blocks to distribute and set the original max index to 0
         int blocksToDistribute = list.get(maxIndex);
