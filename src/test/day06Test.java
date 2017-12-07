@@ -6,8 +6,10 @@
  *              http://adventofcode.com/2017/day/6
  */
 
-package main;
+package test;
 
+import main.day06;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -20,7 +22,7 @@ class day06Test {
     @Test
     void getSizeOfLoop() {
         ArrayList<Integer> list = getList(TEST_1);
-        assertEquals(4, day06.getSizeOfLoop(list));
+        Assertions.assertEquals(4, day06.getSizeOfLoop(list));
     }
 
     @Test
